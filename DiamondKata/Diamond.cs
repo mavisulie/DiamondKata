@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace DiamondKata
 {
@@ -39,11 +35,9 @@ namespace DiamondKata
             _printableOutput.Append(value);
             _printableOutput.Append(string.Concat(Enumerable.Repeat(" ", innerSpaces)));
             if (value != 'A')
-            {
                 _printableOutput.Append(value);
-                _printableOutput.Append(string.Concat(Enumerable.Repeat(" ", sideSpaces)));
-                _printableOutput.Append("\n");
-            }
+            _printableOutput.Append(string.Concat(Enumerable.Repeat(" ", sideSpaces)));
+            _printableOutput.Append("\n");
         }
     }
 }
